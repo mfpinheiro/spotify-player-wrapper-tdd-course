@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://mfpinheiro.com/spotify-player-wrapper-tdd-course"
+    "url": "git+https://github.com/mpfinheiro/spotify-player-wrapper-tdd-course"
   },
   "keywords": [
     "js",
@@ -53,6 +53,7 @@
     "prettier": "^1.9.1",
     "ramda": "^0.25.0",
     "react": "^16.1.1",
-    "react-dom": "^16.1.1"
+    "react-dom": "^16.1.1",
+    "spotify-wrapper-tdd-course": "^1.0.7"
   }
 }
