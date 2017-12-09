@@ -1,1 +1,12 @@
-console.log('Spotify Player Wrapper Tdd Course!');
+import spotify from './Spotify';
+import renderAlbums from './AlbumList';
+
+const albums = spotify.search.albums('Incubus');
+const albumList = document.getElementById('album-list');
+
+albums
+  .then(data => renderAlbums(data.albums.items, albumList))
+
+// albums.then(data => console.log(data));
+
+
