@@ -31,7 +31,7 @@ $ npm start
 
 ```
 
-The app will be lunch in locahost:8080
+The app will be lunch in [http://localhost:8080](https://localhost:8080)
 
 ## How to use
 
