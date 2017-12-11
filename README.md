@@ -1,66 +1,56 @@
-# Project Title
+# Spotify Player Wrapper
 
-One Paragraph of project description goes here
 
-## Getting Started
+## Browser Support
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This library relies on [Fetch API](https://fetch.spec.whatwg.org/). And this API is supported in the following browsers.
 
-### Prerequisites
+![Chrome](https://cloud.githubusercontent.com/assets/398893/3528328/23bc7bc4-078e-11e4-8752-ba2809bf5cce.png) | ![Firefox](https://cloud.githubusercontent.com/assets/398893/3528329/26283ab0-078e-11e4-84d4-db2cf1009953.png) | ![Opera](https://cloud.githubusercontent.com/assets/398893/3528330/27ec9fa8-078e-11e4-95cb-709fd11dac16.png) | ![Safari](https://cloud.githubusercontent.com/assets/398893/3528331/29df8618-078e-11e4-8e3e-ed8ac738693f.png) | ![IE](https://cloud.githubusercontent.com/assets/398893/3528325/20373e76-078e-11e4-8e3a-1cb86cf506f0.png) |
+--- | --- | --- | --- | --- |
+39+ ✔ | 42+ ✔ | 29+ ✔ | 10.1+ ✔ | Nope ✘ |
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+## Instructions
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+clone or download the repository
+```sh
+$ git clone https://github.com/mpfinheiro/spotify-player-wrapper-tdd-course
 
 ```
-until finished
-```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+inside the folder install all dependencies:
+```sh
+$ npm install
 
 ```
-Give an example
-```
 
-### And coding style tests
-
-Explain what these tests test and why
+run with:
+```sh
+$ npm start
 
 ```
-Give an example
+
+The app will be lunch in locahost:8080
+
+## How to use
+
+### ES
+
+#### if you get 401 (unauthorized) go in src/Spotify.js and insert a new token
+
+```js
+// Import
+import SpotifyWrapper from 'spotify-wrapper-tdd-course';
+
+const spotify = new SpotifyWrapper({
+  token: 'YOUR_TOKEN_HERE'
+});
+
+export default spotify;
 ```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+#### Get your token at  [Spotify Web Console](https://developer.spotify.com/web-api/console)
 
 ## Contributing
 
@@ -68,20 +58,16 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+| ![Mateus Fernando](https://avatars2.githubusercontent.com/u/8331550?v=4)|
+|:---------------------:|
+|  [Mateus Fernando](https://github.com/mfpinheiro/)   |
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/willianjusten/spotify-wrapper/contributors) who participated in this project.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
