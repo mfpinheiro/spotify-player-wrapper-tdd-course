@@ -8,4 +8,5 @@ export default function renderALbumInfo(data, element) {
     </div>`;
   // eslint-disable-next-line no-param-reassign
   element.innerHTML = markup;
+  return data;
 }

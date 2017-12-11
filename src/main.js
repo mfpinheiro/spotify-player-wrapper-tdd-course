@@ -1,6 +1,7 @@
 import spotify from './Spotify';
 import renderAlbums from './AlbumList';
 import renderAlbumInfo from './AlbumInfo';
+import renderAlbumTracs from './AlbumTracks';
 
 const albums = spotify.search.albums('Incubus');
 // eslint-disable-next-line no-undef
@@ -16,5 +17,5 @@ const albumInfo = document.getElementById('album-info');
 
 albums.then(data => renderAlbums(data.albums.items, albumList));
 
-album.then(data => renderAlbumInfo(data, albumInfo));
+album.then(data => renderAlbumInfo(data, albumInfo))
 

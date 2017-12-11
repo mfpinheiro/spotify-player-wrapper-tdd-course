@@ -49,4 +49,9 @@ describe('Album Info', () => {
     renderAlbumInfo(data, element);
     expect(element.innerHTML).to.be.eql(oneInfoMarkup);
   });
+
+  it('should return the data', () => {
+    const element = document.createElement('div');
+    expect(renderAlbumInfo(data, element)).to.be.eql(data);
+  });
 });
