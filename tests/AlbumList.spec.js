@@ -107,33 +107,33 @@ describe('AlbumList', () => {
   ];
 
   const singleListItemMarkup = `
-    <div class="list-item">
+    <div class="list-item" data-album-id="${oneAlbum[0].id}">
       <img src="${oneAlbum[0].images[2].url}" alt="${
-    oneAlbum[0].name
-  }" class="list-image">
-      <div class="list-description">
-        <p class="list-title">${oneAlbum[0].name}</p>
-        <p class="list-subtitle">${oneAlbum[0].artists[0].name}</p>
+    oneAlbum[0].name 
+  }" class="list-image" data-album-id="${oneAlbum[0].id}">
+      <div class="list-description" data-album-id="${oneAlbum[0].id}">
+        <p class="list-title" data-album-id="${oneAlbum[0].id}">${oneAlbum[0].name}</p>
+        <p class="list-subtitle" data-album-id="${oneAlbum[0].id}">${oneAlbum[0].artists[0].name}</p>
       </div>
     </div>`;
 
   const multipleListItemMarkup = `
-    <div class="list-item">
+    <div class="list-item" data-album-id="${multipleAlbums[0].id}">
       <img src="${multipleAlbums[0].images[2].url}" alt="${
     multipleAlbums[0].name
-  }" class="list-image">
-      <div class="list-description">
-        <p class="list-title">${multipleAlbums[0].name}</p>
-        <p class="list-subtitle">${multipleAlbums[0].artists[0].name}</p>
+  }" class="list-image" data-album-id="${multipleAlbums[0].id}">
+      <div class="list-description" data-album-id="${multipleAlbums[0].id}">
+        <p class="list-title" data-album-id="${multipleAlbums[0].id}">${multipleAlbums[0].name}</p>
+        <p class="list-subtitle" data-album-id="${multipleAlbums[0].id}">${multipleAlbums[0].artists[0].name}</p>
       </div>
     </div>
-    <div class="list-item">
+    <div class="list-item" data-album-id="${multipleAlbums[0].id}">
       <img src="${multipleAlbums[0].images[2].url}" alt="${
     multipleAlbums[0].name
-  }" class="list-image">
-      <div class="list-description">
-        <p class="list-title">${multipleAlbums[0].name}</p>
-        <p class="list-subtitle">${multipleAlbums[0].artists[0].name}</p>
+  }" class="list-image" data-album-id="${multipleAlbums[0].id}">
+      <div class="list-description" data-album-id="${multipleAlbums[0].id}">
+        <p class="list-title" data-album-id="${multipleAlbums[0].id}">${multipleAlbums[0].name}</p>
+        <p class="list-subtitle" data-album-id="${multipleAlbums[0].id}">${multipleAlbums[0].artists[0].name}</p>
       </div>
     </div>`;
 
