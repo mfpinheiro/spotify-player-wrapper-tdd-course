@@ -15,7 +15,7 @@ function makeRequest() {
 }
 
 export default function searchEnterTrigger() {
-  searchFrom.addEventListener('submit', e => {
+  searchFrom.addEventListener('submit', (e) => {
     e.preventDefault();
     makeRequest();
   });
